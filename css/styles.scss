@@ -59,7 +59,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    background: #FFF;
+    background: #EEE;
     font-family: "Inconsolata", serif;
 }
 a{
@@ -70,12 +70,14 @@ a{
     max-width: 100%;
     margin-bottom: 3%;
     display: block;
+    transition: background-color .25s;
 }
 .header__nav{
     display: flex;
 }
 .nav__title{
     flex: 3;
+    margin-left: 5%
 }
 .nav__menu{
     flex: 1;
@@ -84,7 +86,7 @@ a{
     justify-content: flex-end;
     list-style: none;
     font-size: 150%;
-    margin-right: 10%;
+    margin-right: 5%;
 
     @include sm{
         flex-direction: row;
@@ -100,3 +102,21 @@ a{
         padding: 10px 20px;
     }
 }
+html:not([data-scroll='0']) {
+  
+    body {
+        padding-top: 5em;
+    }
+    
+    .header {
+        max-width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: #fff;
+        box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    }
+    
+  }
