@@ -50,20 +50,27 @@ a {
 .nav__menu {
   flex: 1;
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   list-style: none;
   font-size: 150%;
   margin-right: 5%;
 }
-@media (min-width: 576px) {
-  .nav__menu {
-    flex-direction: row;
-  }
+.nav__menu--toogle {
+  display: none;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .nav__menu {
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .nav__menu--toogle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+  .nav__menu .nav-menu--elem {
+    display: none;
   }
 }
 
@@ -72,6 +79,10 @@ a {
 }
 .nav__menu--elem a {
   padding: 10px 20px;
+}
+
+.nav__menu--toogle-show {
+  display: flex;
 }
 
 html:not([data-scroll="0"]) body {
