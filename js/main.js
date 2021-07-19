@@ -34,13 +34,3 @@ const debounce = (fn) => {
   
   // Update scroll position for first time
   storeScroll();
-
-//nav menu toogle
-  function classToggle() {
-    const navs = document.querySelectorAll('.nav__menu--elem')
-    
-    navs.forEach(nav => nav.classList.toggle('nav__menu--toogle-show'));
-  }
-  
-  document.querySelector('.nav__menu--toggle')
-    .addEventListener('click', classToggle);
