@@ -70,8 +70,13 @@ a{
 
 .header{
     max-width: 100%;
-    max-height: auto;
+    max-height: 65px;
     display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
     padding: 16px 0px;
     background-color: transparent;
     -webkit-transition: background .2s ease;
@@ -120,12 +125,7 @@ a.nav__menu--elem{
 }
 
 html:not([data-scroll='0']) {
-	
-	body {
-	  margin-top: 75px;
-	}
 	.header {
-		position: fixed;
 		top: 0;
         right: 0;
         left: 0;
@@ -133,4 +133,22 @@ html:not([data-scroll='0']) {
 		background: rgba(255, 255, 255, 1);
 		box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
 	}
+}
+
+//.content__elem--intro{
+.content__header-intro{
+    display: block;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(/images/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+@media (min-width: 992px){
+    .content__elem--intro {
+        height: 100vh;
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
 }
