@@ -61,16 +61,34 @@ html{
 body{
     background: #EEE;
     font-family: "Inconsolata", serif;
+    margin: 0;
 }
 a{
     text-decoration: none;
 }
 
+#top-of-site-pixel-anchor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 1px;
+    left: 0;
+  }
+
 .header{
     max-width: 100%;
-    margin-bottom: 3%;
+    max-height: auto;
     display: block;
-    transition: background-color .25s;
+    padding: 16px 0px;
+    background-color: transparent;
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -o-transition: background .2s ease;
+    transition: background .2s ease;
+
+    h1, ul{
+        margin: 0;
+    }
 }
 .header__nav{
     display: flex;
@@ -103,20 +121,17 @@ a{
     }
 }
 html:not([data-scroll='0']) {
-  
-    body {
-        padding-top: 5em;
-    }
-    
-    .header {
-        max-width: 100%;
-        position: fixed;
-        top: 0;
+	
+	body {
+	  margin-top: 75px;
+	}
+	.header {
+		position: fixed;
+		top: 0;
         right: 0;
         left: 0;
         z-index: 1030;
-        background-color: #fff;
-        box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
-    }
-    
-  }
+		background: rgba(255, 255, 255, 1);
+		box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+	}
+}
