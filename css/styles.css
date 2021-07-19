@@ -1,4 +1,59 @@
+/*responsive settings*/
+/*end responsive settings*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   background: #FFF;
   font-family: "Inconsolata", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  max-width: 100%;
+  margin-bottom: 3%;
+  display: block;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.nav__title {
+  flex: 3;
+}
+
+.nav__menu {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 150%;
+  margin-right: 10%;
+}
+@media (min-width: 576px) {
+  .nav__menu {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .nav__menu {
+    flex-direction: row;
+  }
+}
+
+.nav__menu--elem {
+  flex: 1;
+}
+.nav__menu--elem a {
+  padding: 10px 20px;
 }/*# sourceMappingURL=styles.css.map */

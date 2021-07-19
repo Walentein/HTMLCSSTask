@@ -1,4 +1,102 @@
+/*responsive settings*/
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ // Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+/*end responsive settings*/
+
+html{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
 body{
     background: #FFF;
     font-family: "Inconsolata", serif;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    max-width: 100%;
+    margin-bottom: 3%;
+    display: block;
+}
+.header__nav{
+    display: flex;
+}
+.nav__title{
+    flex: 3;
+}
+.nav__menu{
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 150%;
+    margin-right: 10%;
+
+    @include sm{
+        flex-direction: row;
+    }
+    @include md{
+        flex-direction: row;
+    }
+}
+.nav__menu--elem{
+    flex: 1;
+
+    a{
+        padding: 10px 20px;
+    }
 }
