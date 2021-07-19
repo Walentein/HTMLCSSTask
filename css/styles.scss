@@ -62,18 +62,11 @@ body{
     background: #EEE;
     font-family: "Inconsolata", serif;
     margin: 0;
+    padding: 0;
 }
 a{
     text-decoration: none;
 }
-
-#top-of-site-pixel-anchor {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    top: 1px;
-    left: 0;
-  }
 
 .header{
     max-width: 100%;
@@ -97,6 +90,7 @@ a{
     flex: 3;
     margin-left: 5%
 }
+
 .nav__menu{
     flex: 1;
     display: inline-flex;
@@ -118,21 +112,13 @@ a{
             position: absolute;
             cursor: pointer;
         }
-        .nav-menu--elem{
-            display: none;
-        }
     }
 }
-.nav__menu--elem{
+a.nav__menu--elem{
     flex: 1;
+    padding: 0px 20px;
+}
 
-    a{
-        padding: 10px 20px;
-    }
-}
-.nav__menu--toogle-show{
-    display: flex;
-}
 html:not([data-scroll='0']) {
 	
 	body {
