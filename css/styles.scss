@@ -143,7 +143,6 @@ html:not([data-scroll='0']) {
 	}
 }
 
-//.content__elem--intro{
 .content__header-intro{
     display: block;
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../images/bg-masthead.jpg);
@@ -156,6 +155,13 @@ html:not([data-scroll='0']) {
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
+
+    .content__elem--intro{
+        //display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
 }
 /*@media (min-width: 992px){
     .content__elem--intro {
@@ -328,6 +334,20 @@ html:not([data-scroll='0']) {
     display: flex;
     flex-direction: column;
     margin-bottom: 48px;
+}
+
+.gallery__elem{
+    .elem__image, .gallery__elem{
+        width: 450px;
+        height: 242px;
+    }
+}
+.porfolio__gallery{
+    display: flex;
+    flex-wrap: wrap;
+    &>*{
+        flex: 1 1 450px;
+    }
 }
 
 //contact us form
