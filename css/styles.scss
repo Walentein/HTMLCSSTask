@@ -99,7 +99,8 @@ a{
 }
 .nav__title{
     flex: 3;
-    margin-left: 5%
+    margin-left: 5%;
+    color: #000;
 }
 
 .nav__menu{
@@ -128,6 +129,7 @@ a{
 a.nav__menu--elem{
     flex: 1;
     padding: 0px 20px;
+    color: #000;
 }
 
 html:not([data-scroll='0']) {
@@ -178,6 +180,7 @@ html:not([data-scroll='0']) {
 }
 .elem__about{
     margin: 0px 122px;
+    color: #FFF;
 }
 
 .content__elem--services{
@@ -187,10 +190,24 @@ html:not([data-scroll='0']) {
 .elem__services{
     margin: 0px 122px;
 }
-
+.elem__img{
+    img{
+        width: 33px;
+        height: 33px;
+    }
+}
 .services__list{
+    margin-top: 50px;
     display: flex;
-    flex-direction: row;
+    //flex-direction: row;
+    justify-content: space-between;
+
+    .list__elem{
+        margin-right: 20px;
+    }
+    .list__elem:last-child{
+        margin-right: 0px;
+    }
     h2{
         font-size: 100%;
     }
@@ -226,4 +243,70 @@ html:not([data-scroll='0']) {
     left: 0;
     bottom: 0;
     padding: 48px 0px;
+}
+
+//buttons
+.about__get-started, .intro__more{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+    font-weight: bold;
+    
+    a{
+        font-size: 19px;
+        letter-spacing: 1px;
+        transform-style: preserve-3d;
+        transform: translateZ(-25px);
+        transition: transform .25s;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    a:before,
+    a:after{
+        position: absolute;
+        content: "BUTTON";
+        height: 55px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    a:before{
+        color: #000;
+        transform: rotateY(0deg) translateZ(25px);
+    }
+    a:after{
+        color: #fff;
+        background: #000;
+        transform: rotateX(90deg) translateZ(25px);
+    }
+    a:hover{
+        transform: translateZ(-25px) rotateX(-90deg);
+    } 
+}
+.about__get-started{
+    a:before,
+    a:after{
+        content: "GET STARTED!";
+        border: 5px solid white;
+    }
+    a:before{
+        color: #FFF;
+    }
+    a:after{
+        color: #000;
+        background: #FFF;
+    }
+}
+.intro__more{
+    a:before,
+    a:after{
+        content: "FIND OUT MORE";
+    }
 }
