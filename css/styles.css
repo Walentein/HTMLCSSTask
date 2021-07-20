@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #EEE;
+  background: #FFF;
   font-family: "Inconsolata", serif;
   margin: 0;
   padding: 0;
@@ -19,7 +19,14 @@ a {
   text-decoration: none;
 }
 
+.content {
+  text-align: center;
+  font-size: 150%;
+}
+
 .header {
+  text-align: start;
+  font-size: 80%;
   max-width: 100%;
   max-height: 65px;
   display: block;
@@ -104,6 +111,10 @@ html:not([data-scroll="0"]) .header {
         padding-bottom: 0;
     }
 }*/
+.content__elem--intro {
+  margin: 0px 122px;
+}
+
 .content__elem--about {
   background-color: #f4623a;
   padding: 128px 0px;
@@ -112,14 +123,25 @@ html:not([data-scroll="0"]) .header {
   margin-top: 0;
 }
 
+.elem__about {
+  margin: 0px 122px;
+}
+
 .content__elem--services {
   background-color: #FFF;
   padding: 128px 0px;
 }
 
+.elem__services {
+  margin: 0px 122px;
+}
+
 .services__list {
   display: flex;
   flex-direction: row;
+}
+.services__list h2 {
+  font-size: 100%;
 }
 
 .intro__separator, .about__separator, .services__separator, .contact__separator {
@@ -146,4 +168,17 @@ html:not([data-scroll="0"]) .header {
 
 .about__separator {
   background-color: #FFF;
+}
+
+.content__elem--contact {
+  padding: 128px 0px;
+}
+
+.footer {
+  background-color: #EEE;
+  color: lightgray;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 48px 0px;
 }/*# sourceMappingURL=styles.css.map */
