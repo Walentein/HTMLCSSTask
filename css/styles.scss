@@ -143,12 +143,54 @@ html:not([data-scroll='0']) {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
 }
-@media (min-width: 992px){
+/*@media (min-width: 992px){
     .content__elem--intro {
         height: 100vh;
         min-height: 40rem;
         padding-top: 4.5rem;
         padding-bottom: 0;
     }
+}*/
+
+.content__elem--about{
+    background-color: #f4623a;
+    padding: 128px 0px;
+    
+    h2{
+        margin-top: 0;
+    }
+}
+
+.content__elem--services{
+    background-color: #FFF;
+    padding: 128px 0px;
+}
+.services__list{
+    display: flex;
+    flex-direction: row;
+}
+
+.intro__separator, .about__separator, .services__separator, .contact__separator{
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+    border: 0;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+.about__separator{
+    background-color: #FFF;
 }
