@@ -28,7 +28,7 @@ a {
   text-align: start;
   font-size: 80%;
   max-width: 100%;
-  max-height: 65px;
+  height: 65px;
   display: block;
   position: fixed;
   top: 0;
@@ -56,6 +56,10 @@ a {
   color: #FFF;
 }
 
+.icon {
+  visibility: none;
+}
+
 .nav__menu {
   flex: 1;
   display: inline-flex;
@@ -65,27 +69,19 @@ a {
   font-size: 150%;
   margin-right: 5%;
 }
-.nav__menu--toogle {
-  display: none;
-}
 @media (max-width: 768px) {
   .nav__menu {
     flex-direction: column;
-  }
-  .nav__menu--toogle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
+    visibility: hidden;
   }
 }
 
-a.nav__menu--elem {
+.nav__menu--elem {
   flex: 1;
   padding: 0px 20px;
   color: #000;
 }
-a.nav__menu--elem:hover {
+.nav__menu--elem:hover {
   color: #FFF;
 }
 
@@ -466,4 +462,60 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   color: #000;
   font-style: normal;
+}
+
+.bars {
+  margin-right: 20px;
+  position: relative;
+  display: none;
+}
+@media (max-width: 768px) {
+  .bars {
+    display: block;
+  }
+}
+
+.menu-icon {
+  top: 0;
+  right: 0;
+}
+
+.menu-icon .bar-1,
+.menu-icon .bar-2,
+.menu-icon .bar-3 {
+  display: block;
+  flex-direction: column;
+  background: #000;
+  height: 4px;
+  margin: 6px 0;
+  width: 30px;
+  transition: 0.5s ease;
+}
+
+#menuToggle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1031;
+  opacity: 0;
+}
+
+#menuToggle:checked ~ .menu-icon .bar-1 {
+  transform: rotate(-45deg) translate(-10px, 3px);
+  -webkit-transform: rotate(-45deg) translate(-10px, 3px);
+}
+
+#menuToggle:checked ~ .menu-icon .bar-2 {
+  opacity: 0;
+}
+
+#menuToggle:checked ~ .menu-icon .bar-3 {
+  transform: rotate(45deg) translate(-10px, -3px);
+  -webkit-transform: rotate(45deg) translate(-10px, -3px);
+}
+
+#menuToggle:checked ~ .menu-icon {
+  visibility: visible;
 }/*# sourceMappingURL=styles.css.map */

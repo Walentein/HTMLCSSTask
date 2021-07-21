@@ -15,15 +15,23 @@
     <div id="page-top"></div>
     <div class="content">
         <div class="content__header-intro">
-            <div class="header">
+            <div class="header" id="header">
                 <div class="header__nav">
                     <a class="nav__title" href="#page-top"><h1>BarsFolio</h1></a>
-                    <ul class="nav__menu">
+                    <ul class="nav__menu" id="nav__menu">
                         <a class="nav__menu--elem" href="#content__about"><li>About</li></a>
                         <a class="nav__menu--elem" href="#content__services"><li>Services</li></a>
                         <a class="nav__menu--elem elem__portfolio" href="#content__portfolio"><li>Portfolio</li></a>
                         <a class="nav__menu--elem" href="#content__contact"><li>Contact</li></a>
                     </ul>
+                    <div class="bars">
+                        <input type="checkbox" id="menuToggle" onclick="hamburger()" />
+                        <div class="menu-icon">
+                            <span class="bar-1"></span>
+                            <span class="bar-2"></span>
+                            <span class="bar-3"></span>
+                        </div>
+                      </div>
                 </div><!--End nav-->
             </div><!--End header-->
 
