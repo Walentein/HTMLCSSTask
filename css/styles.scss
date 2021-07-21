@@ -101,6 +101,9 @@ a{
     flex: 3;
     margin-left: 5%;
     color: #000;
+    &:hover{
+        color: #FFF;
+    }
 }
 
 .nav__menu{
@@ -130,6 +133,9 @@ a.nav__menu--elem{
     flex: 1;
     padding: 0px 20px;
     color: #000;
+    &:hover{
+        color: #FFF;
+    }
 }
 
 html:not([data-scroll='0']) {
@@ -141,6 +147,16 @@ html:not([data-scroll='0']) {
 		background: rgba(255, 255, 255, 1);
 		box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
 	}
+    .nav__title{
+        &:hover{
+            color: #f4623a;
+        }
+    }
+    a.nav__menu--elem{
+        &:hover{
+            color: #f4623a;
+        }
+    }
 }
 
 .content__header-intro{
@@ -155,28 +171,24 @@ html:not([data-scroll='0']) {
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
-
-    .content__elem--intro{
-        //display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
 }
-/*@media (min-width: 992px){
-    .content__elem--intro {
-        height: 100vh;
-        min-height: 40rem;
-        padding-top: 4.5rem;
-        padding-bottom: 0;
-    }
-}*/
 
 .content__elem--intro{
     margin: 0px 122px;
+    
+}
+.content__intro{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .content__elem--about{
+    display: flex;
     background-color: #f4623a;
     padding: 128px 0px;
     
@@ -184,7 +196,10 @@ html:not([data-scroll='0']) {
         margin-top: 0;
     }
 }
-.elem__about{
+.element__about{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     margin: 0px 122px;
     color: #FFF;
 }
@@ -206,9 +221,15 @@ html:not([data-scroll='0']) {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    &>*{
+        flex: 1 1 20%;
+    }
 
     .list__elem{
         margin-right: 20px;
+        width: 100%;
+        height: 100%;
     }
     .list__elem:last-child{
         margin-right: 0px;
@@ -336,17 +357,50 @@ html:not([data-scroll='0']) {
     margin-bottom: 48px;
 }
 
+.elem__about{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    visibility: hidden;
+}
+.about__category{
+    font-size: 85%;
+    font-weight: bold;
+    color: rgba(240, 240, 240, .85);
+}
+.about__project{
+    font-size: 120%
+}
 .gallery__elem{
+    position: relative;
+
+    a{
+        text-decoration: none;
+        color: #FFF
+    }
     .elem__image, .gallery__elem{
-        width: 450px;
-        height: 242px;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    &:hover{
+        .elem__about{
+            visibility: visible;
+            background-color: rgba(244, 98, 58, .8);//#f4623a
+        }
     }
 }
-.porfolio__gallery{
+.portfolio__gallery{
     display: flex;
     flex-wrap: wrap;
     &>*{
-        flex: 1 1 450px;
+        flex: 1 1 33%;
     }
 }
 
@@ -354,7 +408,7 @@ html:not([data-scroll='0']) {
 
 .container{
     display: flex;
-    margin-left: 1rem;
+    margin: 0 1rem;
 }
 
 input:focus ~ label, textarea:focus ~ label, tel:focus ~ label, email:focus ~ label,
