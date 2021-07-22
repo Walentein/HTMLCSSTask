@@ -114,10 +114,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 }
 
 .content__elem--intro {
-  margin: 0px 122px;
-}
-
-.content__intro {
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -127,10 +123,20 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   text-align: center;
 }
 
+.content__intro {
+  margin: 0px 122px;
+}
+
 .content__elem--about {
   display: flex;
   background-color: #f4623a;
   padding: 128px 0px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 .content__elem--about h2 {
   margin-top: 0;
@@ -146,10 +152,22 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 
 .content__elem--services {
   background-color: #FFF;
-  padding: 128px 0px;
+  display: flex;
+  flex: 0 0 100%;
+  min-height: 950px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .elem__services {
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 128px 0px;
   margin: 0px 122px;
 }
 
@@ -163,20 +181,38 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-.services__list > * {
-  flex: 1 1 20%;
-}
-.services__list .list__elem {
-  margin-right: 20px;
-  width: 100%;
-  height: 100%;
-}
-.services__list .list__elem:last-child {
-  margin-right: 0px;
+  /*&>*{
+      flex: 1 1 21%;
+  }*/
 }
 .services__list h2 {
   font-size: 100%;
+}
+
+.list__elem {
+  margin-right: 20px;
+  width: 100%;
+  height: 100%;
+  flex: 1 0 21%;
+}
+@media (max-width: 576px) {
+  .list__elem {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 828px) {
+  .list__elem {
+    flex: 1 0 45%;
+  }
+}
+@media (max-width: 644px) {
+  .list__elem {
+    flex: 1 0 75%;
+  }
+}
+
+.list__elem:last-child {
+  margin-right: 0px;
 }
 
 .intro__separator, .about__separator, .services__separator, .contact__separator {
