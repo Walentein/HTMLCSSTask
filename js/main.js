@@ -36,7 +36,11 @@ function hamburger(){
     if (document.getElementById("menuToggle").checked == true) {
         document.getElementById("nav__menu").style.visibility = "visible";
         if(window.scrollY>0){
-            document.getElementById("header").style.height = "150px";
+            if(window.matchMedia('(max-width: 450px)')){
+                document.getElementById("header").style.height = "180px";
+            }else{
+                document.getElementById("header").style.height = "150px";
+            }
         }
     } 
     else {

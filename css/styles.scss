@@ -59,6 +59,14 @@ $screen-xl-min: 1200px;
         @content;
     }
 }
+
+//extra small nav bar adaptation
+@mixin xs-nav {
+    @media (max-width: 450px){
+        @content;
+    }
+}
+
 /*end responsive settings*/
 
 html{
@@ -100,7 +108,7 @@ a{
     -webkit-transition: background .2s ease;
     -moz-transition: background .2s ease;
     -o-transition: background .2s ease;
-    transition: background .2s ease;
+    transition: background .2s ease; 
 
     h1, ul{
         margin: 0;
@@ -133,6 +141,10 @@ a{
         flex-direction: column;
         visibility: hidden;
     }
+    @include xs-nav{
+        flex-direction: column;
+        visibility: visible;
+    }
 }
 .nav__menu--elem{
     flex: 1;
@@ -151,7 +163,12 @@ html:not([data-scroll='0']) {
         z-index: 1030;
 		background: rgba(255, 255, 255, 1);
 		box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
-	}
+        -webkit-transition: height .1s linear;   
+        -moz-transition: height .1s linear;   
+        -ms-transition: height .1s linear;   
+        -o-transition: height .1s linear;   
+        transition: height .1s linear;
+    }
     .nav__title{
         &:hover{
             color: #f4623a;
@@ -566,7 +583,30 @@ input[type=checkbox]:checked + label {
     @include md{
         display: block;
     }
+    @include xs-nav{
+        //display: none;
+        flex: 2;
+        justify-content: flex-end;
+        order: 2;
+        right: 0;
+    }
 }
+@include xs-nav{
+    .header__nav{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .nav__title{
+        flex: 3;
+        order: 1;
+    }
+    .nav__menu{
+        //display: none;
+        order: 3;
+        flex: 1;
+    }
+}
+
 .menu-icon{
     top: 0;
     right: 0;

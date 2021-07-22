@@ -75,6 +75,12 @@ a {
     visibility: hidden;
   }
 }
+@media (max-width: 450px) {
+  .nav__menu {
+    flex-direction: column;
+    visibility: visible;
+  }
+}
 
 .nav__menu--elem {
   flex: 1;
@@ -92,6 +98,7 @@ html:not([data-scroll="0"]) .header {
   z-index: 1030;
   background: white;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  transition: height 0.1s linear;
 }
 html:not([data-scroll="0"]) .nav__title:hover {
   color: #f4623a;
@@ -510,7 +517,31 @@ input[type=checkbox]:checked + label {
     display: block;
   }
 }
+@media (max-width: 450px) {
+  .bars {
+    flex: 2;
+    justify-content: flex-end;
+    order: 2;
+    right: 0;
+  }
+}
 
+@media (max-width: 450px) {
+  .header__nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav__title {
+    flex: 3;
+    order: 1;
+  }
+
+  .nav__menu {
+    order: 3;
+    flex: 1;
+  }
+}
 .menu-icon {
   top: 0;
   right: 0;
