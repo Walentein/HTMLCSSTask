@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background: #FFF;
+  background: white;
   font-family: "Inconsolata", serif;
   margin: 0;
   padding: 0;
@@ -21,12 +21,11 @@ a {
 
 .content {
   text-align: center;
-  font-size: 150%;
+  font-size: 30px;
 }
 
 .header {
   text-align: start;
-  font-size: 80%;
   max-width: 100%;
   height: 65px;
   display: block;
@@ -39,7 +38,7 @@ a {
   background-color: transparent;
   transition: background 0.2s ease;
 }
-.header h1, .header ul {
+.header ul {
   margin: 0;
 }
 
@@ -50,10 +49,12 @@ a {
 .nav__title {
   flex: 3;
   margin-left: 5%;
-  color: #000;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
 }
 .nav__title:hover {
-  color: #FFF;
+  color: white;
 }
 
 .icon {
@@ -66,7 +67,7 @@ a {
   flex-direction: row;
   justify-content: flex-end;
   list-style: none;
-  font-size: 150%;
+  font-size: 30px;
   margin-right: 5%;
 }
 @media (max-width: 768px) {
@@ -85,10 +86,10 @@ a {
 .nav__menu--elem {
   flex: 1;
   padding: 0px 20px;
-  color: #000;
+  color: black;
 }
 .nav__menu--elem:hover {
-  color: #FFF;
+  color: white;
 }
 
 html:not([data-scroll="0"]) .header {
@@ -138,7 +139,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   display: flex;
   background-color: #f4623a;
   padding: 128px 0px;
-  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -154,14 +154,13 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   justify-content: center;
   align-content: center;
   margin: 0px 122px;
-  color: #FFF;
+  color: white;
 }
 
 .content__elem--services {
-  background-color: #FFF;
+  background-color: white;
   display: flex;
   flex: 0 0 100%;
-  min-height: 950px;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -188,12 +187,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*&>*{
-      flex: 1 1 21%;
-  }*/
-}
-.services__list h2 {
-  font-size: 100%;
 }
 
 .list__elem {
@@ -202,19 +195,15 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   height: 100%;
   flex: 1 0 21%;
 }
-@media (max-width: 576px) {
-  .list__elem {
-    margin-right: 0px;
-  }
-}
-@media (max-width: 828px) {
+@media (max-width: 1100px) {
   .list__elem {
     flex: 1 0 45%;
   }
 }
-@media (max-width: 644px) {
+@media (max-width: 710px) {
   .list__elem {
     flex: 1 0 75%;
+    margin-right: 0px;
   }
 }
 
@@ -246,7 +235,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 }
 
 .about__separator {
-  background-color: #FFF;
+  background-color: white;
 }
 
 .content__elem--contact {
@@ -260,6 +249,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   left: 0;
   bottom: 0;
   padding: 48px 0px;
+  text-align: center;
 }
 
 .about__get-started, .intro__more {
@@ -279,9 +269,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   transition: transform 0.25s;
   font-family: "Montserrat", sans-serif;
 }
-.about__get-started a:before,
-.about__get-started a:after, .intro__more a:before,
-.intro__more a:after {
+.about__get-started a:before, .about__get-started a:after, .intro__more a:before, .intro__more a:after {
   position: absolute;
   content: "BUTTON";
   height: 55px;
@@ -289,17 +277,17 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid black;
+  border: 4px solid black;
   box-sizing: border-box;
   border-radius: 5px;
 }
 .about__get-started a:before, .intro__more a:before {
-  color: #000;
+  color: black;
   transform: rotateY(0deg) translateZ(25px);
 }
 .about__get-started a:after, .intro__more a:after {
-  color: #fff;
-  background: #000;
+  color: white;
+  background: black;
   transform: rotateX(90deg) translateZ(25px);
 }
 .about__get-started a:hover, .intro__more a:hover {
@@ -309,14 +297,14 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 .about__get-started a:before,
 .about__get-started a:after {
   content: "GET STARTED!";
-  border: 5px solid white;
+  border: 4px solid white;
 }
 .about__get-started a:before {
-  color: #FFF;
+  color: white;
 }
 .about__get-started a:after {
-  color: #000;
-  background: #FFF;
+  color: black;
+  background: white;
 }
 
 .intro__more a:before,
@@ -327,6 +315,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 .content__contact {
   display: flex;
   flex-direction: column;
+  margin: 0 122px;
 }
 
 .form__telephone {
@@ -358,13 +347,13 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 }
 
 .about__category {
-  font-size: 85%;
+  font-size: 30px;
   font-weight: bold;
   color: rgba(240, 240, 240, 0.85);
 }
 
 .about__project {
-  font-size: 120%;
+  font-size: 40px;
 }
 
 .gallery__elem {
@@ -372,13 +361,17 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 }
 .gallery__elem a {
   text-decoration: none;
-  color: #FFF;
+  color: white;
 }
 .gallery__elem .elem__image, .gallery__elem .gallery__elem {
   width: 100%;
   height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
+}
+.gallery__elem .elem__about {
+  visibility: hidden;
+  transition: visibility 0.2s ease, background-color 0.5s ease;
 }
 .gallery__elem:hover .elem__about {
   visibility: visible;
@@ -400,10 +393,14 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 
 input:focus ~ label, textarea:focus ~ label, tel:focus ~ label, email:focus ~ label,
 input:valid ~ label, textarea:valid ~ label, tel:valid ~ label, email:valid ~ label {
-  font-size: 0.75em;
-  color: #000;
-  top: -5px;
-  transition: all 0.225s ease;
+  font-size: 20px;
+  color: black;
+  top: -15px;
+  transition: all 0.5s ease;
+}
+
+input[type=text], textarea {
+  font-size: 25px;
 }
 
 .styled-input {
@@ -424,12 +421,11 @@ input:valid ~ label, textarea:valid ~ label, tel:valid ~ label, email:valid ~ la
   }
 }
 .styled-input label {
-  color: #000;
-  padding: 1.3rem 30px 1rem 30px;
+  color: black;
+  padding: 1rem 30px 1rem 30px;
   position: absolute;
-  top: 10px;
   left: 0;
-  transition: all 0.25s ease;
+  transition: all 0.5s ease;
   pointer-events: none;
 }
 
@@ -440,12 +436,12 @@ input:valid ~ label, textarea:valid ~ label, tel:valid ~ label, email:valid ~ la
 
 input,
 textarea {
-  padding: 30px;
+  padding: 15px;
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #FFF;
-  color: #000;
+  background-color: white;
+  color: black;
   border-radius: 4px;
   border: 2px solid black;
 }
@@ -480,30 +476,33 @@ textarea {
   color: white;
   font-size: 18px;
   cursor: pointer;
-  border: 1px solid #FFF;
+  border: 1px solid white;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
   transition: all 300ms ease;
 }
 .submit-btn:hover {
   color: #f4623a;
-  background-color: #FFF;
+  background-color: white;
   border: 1px solid #f4623a;
 }
 
 @media (max-width: 768px) {
   .submit-btn {
-    width: 100%;
+    width: 80%;
+    height: 40px;
+    font-size: 30px;
     float: none;
     text-align: center;
+    line-height: 0.8;
   }
 }
 input[type=checkbox] + label {
-  color: #000;
+  color: black;
   font-style: italic;
 }
 
 input[type=checkbox]:checked + label {
-  color: #000;
+  color: black;
   font-style: normal;
 }
 
@@ -552,7 +551,7 @@ input[type=checkbox]:checked + label {
 .menu-icon .bar-3 {
   display: block;
   flex-direction: column;
-  background: #000;
+  background: black;
   height: 4px;
   margin: 6px 0;
   width: 30px;
