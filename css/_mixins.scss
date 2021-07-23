@@ -71,3 +71,17 @@ $screen-xl-min: 1200px;
         @content;
     }
 }
+
+@mixin centered_column{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+@mixin centered{
+    justify-content: center;
+    align-content: center;
+}
+@mixin flex_column{
+    display: flex;
+    flex-direction: column;
+}

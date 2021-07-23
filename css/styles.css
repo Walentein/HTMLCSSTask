@@ -131,8 +131,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .content__intro {
@@ -146,8 +144,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  align-items: center;
-  text-align: center;
 }
 .content__elem--about .about__title {
   margin-top: 0;
@@ -168,8 +164,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .elem__services {
@@ -279,8 +273,8 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   height: 55px;
   width: 180px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-content: center;
   border: 4px solid black;
   box-sizing: border-box;
   border-radius: 5px;
