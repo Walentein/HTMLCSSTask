@@ -251,6 +251,7 @@ html:not([data-scroll='0']) {
         transition: transform .25s;
         font-family: 'Montserrat', sans-serif;
         
+        
         &:before,
         &:after{
             position: absolute;
@@ -279,6 +280,7 @@ html:not([data-scroll='0']) {
     
 }
 .about__get-started{
+    line-height: 2.5;
     a{
         &:before,
         &:after{

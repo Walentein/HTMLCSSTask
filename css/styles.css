@@ -292,6 +292,9 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   transform: translateZ(-25px) rotateX(-90deg);
 }
 
+.about__get-started {
+  line-height: 2.5;
+}
 .about__get-started a:before, .about__get-started a:after {
   content: "GET STARTED!";
   border: 4px solid white;
