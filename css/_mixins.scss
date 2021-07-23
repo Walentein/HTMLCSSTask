@@ -1,0 +1,73 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+ // Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+ //custom services
+@mixin ser1100 {
+    @media (max-width: 1100px){
+        @content;
+    }
+}
+@mixin ser710 {
+    @media (max-width: 710px){
+        @content;
+    }
+}
+
+//extra small nav bar adaptation
+@mixin xs-nav {
+    @media (max-width: 450px){
+        @content;
+    }
+}
+
+//md nav elem overflow fix
+@mixin nav__md {
+    @media (max-width: 820px){
+        @content;
+    }
+}

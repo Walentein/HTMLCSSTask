@@ -1,5 +1,3 @@
-/*responsive settings*/
-/*end responsive settings*/
 html {
   box-sizing: border-box;
 }
@@ -38,7 +36,7 @@ a {
   background-color: transparent;
   transition: background 0.2s ease;
 }
-.header ul {
+.header .nav__menu {
   margin: 0;
 }
 
@@ -151,7 +149,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   align-items: center;
   text-align: center;
 }
-.content__elem--about h2 {
+.content__elem--about .about__title {
   margin-top: 0;
 }
 
@@ -300,8 +298,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   transform: translateZ(-25px) rotateX(-90deg);
 }
 
-.about__get-started a:before,
-.about__get-started a:after {
+.about__get-started a:before, .about__get-started a:after {
   content: "GET STARTED!";
   border: 4px solid white;
 }
@@ -445,7 +442,7 @@ input[type=text], textarea {
   float: right;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .styled-input {
     width: 100%;
   }
