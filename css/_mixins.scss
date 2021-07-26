@@ -59,14 +59,14 @@ $screen-xl-min: 1200px;
 }
 
 //extra small nav bar adaptation
-@mixin xs-nav {
+@mixin xs_nav {
     @media (max-width: 450px){
         @content;
     }
 }
 
 //md nav elem overflow fix
-@mixin nav__md {
+@mixin md_nav {
     @media (max-width: 820px){
         @content;
     }

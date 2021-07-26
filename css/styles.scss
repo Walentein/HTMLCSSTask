@@ -73,7 +73,7 @@ a{
         flex-direction: column;
         visibility: hidden;
     }
-    @include xs-nav{
+    @include xs_nav{
         flex-direction: column;
         visibility: visible;
     }
@@ -86,7 +86,7 @@ a{
     &:hover{
         color: white;
     }
-    @include nav__md{
+    @include md_nav{
         padding: 0 10px;
     }
 }
@@ -517,14 +517,14 @@ input[type=checkbox]:checked + label {
     @include md{
         display: block;
     }
-    @include xs-nav{
+    @include xs_nav{
         flex: 2;
         justify-content: flex-end;
         order: 2;
         right: 0;
     }
 }
-@include xs-nav{
+@include xs_nav{
     .header__nav{
         flex-wrap: wrap;
         justify-content: space-between;
