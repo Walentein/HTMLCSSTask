@@ -59,20 +59,20 @@ $screen-xl-min: 1200px;
 }
 
 //extra small nav bar adaptation
-@mixin xs_nav {
+@mixin xs-nav {
     @media (max-width: 450px){
         @content;
     }
 }
 
 //md nav elem overflow fix
-@mixin md_nav {
+@mixin md-nav {
     @media (max-width: 820px){
         @content;
     }
 }
 
-@mixin centered_column{
+@mixin centered-column{
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -81,7 +81,7 @@ $screen-xl-min: 1200px;
     justify-content: center;
     align-content: center;
 }
-@mixin flex_column{
+@mixin flex-column{
     display: flex;
     flex-direction: column;
 }
