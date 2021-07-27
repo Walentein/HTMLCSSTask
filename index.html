@@ -1,4 +1,4 @@
-<html lang="en" data-scroll="0">
+<!DOCTYPE html lang="en" data-scroll="0">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="icon" type="image/ico" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
     <title>HTML &amp; CSS Task</title>
 </head>
 <body>
@@ -19,10 +19,18 @@
                 <div class="header__nav">
                     <a class="nav__title" href="#page-top">BarsFolio</a>
                     <ul class="nav__menu" id="nav__menu">
-                        <li><a class="nav__menu--elem" href="#content__about">About</a></li>
-                        <li><a class="nav__menu--elem" href="#content__services">Services</a></li>
-                        <li><a class="nav__menu--elem elem__portfolio" href="#content__portfolio">Portfolio</a></li>
-                        <li><a class="nav__menu--elem" href="#content__contact">Contact</a></li>
+                        <li>
+                            <a class="nav__menu--elem" href="#content__about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav__menu--elem" href="#content__services">Services</a>
+                        </li>
+                        <li>
+                            <a class="nav__menu--elem elem__portfolio" href="#content__portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="nav__menu--elem" href="#content__contact">Contact</a>
+                        </li>
                     </ul>
                     <div class="bars">
                         <input type="checkbox" id="menuToggle" name="hamburger" />
@@ -35,17 +43,17 @@
                 </div><!--End nav-->
             </header><!--End header-->
 
-            <!--<div class="content">-->
-
             <div class="content__elem content__elem--intro">
                 <div class="content__intro">
                 <h1 class="intro__title">This is some kind of creative portfolio</h1>
                 <hr class="intro__separator">
                 <p class="intro__par">
                     This portfolio was made as a task during the C# course to learn and master different technologies including front-end development.
-                </p><!--End intro__par-->
-                <span class="intro__more"><a href="#content__about"><!--Find Out More--></a></span>
-                </div><!--End content__intro-->
+                </p>
+                <span class="intro__more">
+                    <a href="#content__about"></a>
+                </span>
+                </div>
             </div><!--End content__elem--intro-->
         </div><!--End content__header-intro-->
 
@@ -55,8 +63,10 @@
                 <hr class="about__separator">
                 <p class="about__par">
                     So this is my creative portfolio. I'm not a creative person, but I've tried my best to reproduce this portfolio from the sample.
-                </p><!--End about__par-->
-                <span class="about__get-started"><a href="#content__services"><!--Get Started--></a></span>
+                </p>
+                <span class="about__get-started">
+                    <a href="#content__services"></a>
+                </span>
             </div><!--End element__about-->
         </div><!--End content__elem--about-->
 
@@ -70,51 +80,51 @@
                     
                     <div class="list__elem">
                         <div class="elem__img">
-                            <img src="images/services/diamond.svg" alt="diamond minimalistic">
-                        </div><!--End elem__img-->
+                            <img src="images/services/diamond.svg" alt="diamond minimalistic" />
+                        </div>
                         <div class="elem__topic">
                             <h2 class="elem__topic--header">Brilliant quality</h2>
-                        </div><!--End elem__topic-->
+                        </div>
                         <div class="elem__par">
                             <p class="elem__par--p">The most clean and efficient code you can find.</p>
-                        </div><!--End elem__par-->
-                    </div><!--End list__elem-->
+                        </div>
+                    </div>
 
                     <div class="list__elem">
                         <div class="elem__img">
-                            <img src="images/services/laptop.svg" alt="laptop minimalistic">
-                        </div><!--End elem__img-->
+                            <img src="images/services/laptop.svg" alt="laptop minimalistic" />
+                        </div>
                         <div class="elem__topic">
                             <h2 class="elem__topic--header">Up to Date</h2>
-                        </div><!--End elem__topic-->
+                        </div>
                         <div class="elem__par">
                             <p class="elem__par--p">The newest technologies. Regular updates.</p>
-                        </div><!--End elem__par-->
-                    </div><!--End list__elem-->
+                        </div>
+                    </div>
 
                     <div class="list__elem">
                         <div class="elem__img">
-                            <img src="images/services/globe.svg" alt="globe minimalistic">
-                        </div><!--End elem__img-->
+                            <img src="images/services/globe.svg" alt="globe minimalistic" />
+                        </div>
                         <div class="elem__topic">
                             <h2 class="elem__topic--header">Ready to use</h2>
-                        </div><!--End elem__topic-->
+                        </div>
                         <div class="elem__par">
                             <p class="elem__par--p">Developed, tested, ready!</p>
-                        </div><!--End elem__par-->
-                    </div><!--End list__elem-->
+                        </div>
+                    </div>
 
                     <div class="list__elem">
                         <div class="elem__img">
-                            <img src="images/services/heart.svg" alt="heart minimalistic">
-                        </div><!--End elem__img-->
+                            <img src="images/services/heart.svg" alt="heart minimalistic" />
+                        </div>
                         <div class="elem__topic">
                             <h2 class="elem__topic--header">Made with attention</h2>
-                        </div><!--End elem__topic-->
+                        </div>
                         <div class="elem__par">
                             <p class="elem__par--p">Every remark is discussed.</p>
-                        </div><!--End elem__par-->
-                    </div><!--End list__elem-->
+                        </div>
+                    </div>
 
                 </div><!--End content__elem--services--list-->
             </div><!--End elem__services-->
@@ -124,64 +134,64 @@
             <div class="portfolio__gallery">
                 
                 <div class="gallery__elem">
-                    <a href="images/portfolio/fullsize/1.jpg" class=".elem__ref-to-img" data-lightbox="roadtrip">
-                        <img src="images/portfolio/thumbnails/1.jpg" alt="" class="elem__image">
+                    <a href="images/portfolio/fullsize/back_to_school.jpg" data-lightbox="roadtrip">
+                        <img src="images/portfolio/thumbnails/back_to_school.jpg" alt="back to school" class="elem__image" />
                         <div class="elem__about">
                             <div class="about__category">Category1</div>
                             <div class="about__project">Project1</div>
-                        </div><!--End elem__about-->
-                    </a><!--End elem__ref-to-img-->    
-                </div><!--End gallery__elem-->
+                        </div>
+                    </a>   
+                </div>
 
                 <div class="gallery__elem">
-                    <a href="images/portfolio/fullsize/2.jpg" class=".elem__ref-to-img" data-lightbox="roadtrip">
-                        <img src="images/portfolio/thumbnails/2.jpg" alt="" class="elem__image">
+                    <a href="images/portfolio/fullsize/dont_just_stand_there.jpg" data-lightbox="roadtrip">
+                        <img src="images/portfolio/thumbnails/dont_just_stand_there.jpg" alt="don't just stand there" class="elem__image" />
                         <div class="elem__about">
                             <div class="about__category">Category2</div>
                             <div class="about__project">Project2</div>
-                        </div><!--End elem__about-->
-                    </a><!--End elem__ref-to-img-->    
-                </div><!--End gallery__elem-->
+                        </div>
+                    </a>
+                </div>
 
                 <div class="gallery__elem">
-                    <a href="images/portfolio/fullsize/3.jpg" class=".elem__ref-to-img" data-lightbox="roadtrip">
-                        <img src="images/portfolio/thumbnails/3.jpg" alt="" class="elem__image">
+                    <a href="images/portfolio/fullsize/two_cameras.jpg" data-lightbox="roadtrip">
+                        <img src="images/portfolio/thumbnails/two_cameras.jpg" alt="two cameras" class="elem__image" />
                         <div class="elem__about">
                             <div class="about__category">Category3</div>
                             <div class="about__project">Project3</div>
-                        </div><!--End elem__about-->
-                    </a><!--End elem__ref-to-img-->    
-                </div><!--End gallery__elem-->
+                        </div>
+                    </a>  
+                </div>
 
                 <div class="gallery__elem">
-                    <a href="images/portfolio/fullsize/4.jpg" class=".elem__ref-to-img" data-lightbox="roadtrip">
-                        <img src="images/portfolio/thumbnails/4.jpg" alt="" class="elem__image">
+                    <a href="images/portfolio/fullsize/cooking.jpg" data-lightbox="roadtrip">
+                        <img src="images/portfolio/thumbnails/cooking.jpg" alt="cooking" class="elem__image" />
                         <div class="elem__about">
                             <div class="about__category">Category4</div>
                             <div class="about__project">Project4</div>
-                        </div><!--End elem__about-->
-                    </a><!--End elem__ref-to-img-->    
-                </div><!--End gallery__elem-->
+                        </div>
+                    </a>   
+                </div>
 
                 <div class="gallery__elem">
-                    <a href="images/portfolio/fullsize/5.jpg" class=".elem__ref-to-img" data-lightbox="roadtrip">
-                        <img src="images/portfolio/thumbnails/5.jpg" alt="" class="elem__image">
+                    <a href="images/portfolio/fullsize/ruler.jpg" data-lightbox="roadtrip">
+                        <img src="images/portfolio/thumbnails/ruler.jpg" alt="ruler" class="elem__image" />
                         <div class="elem__about">
                             <div class="about__category">Category5</div>
                             <div class="about__project">Project5</div>
-                        </div><!--End elem__about-->
-                    </a><!--End elem__ref-to-img-->    
-                </div><!--End gallery__elem-->
+                        </div>
+                    </a> 
+                </div>
 
                 <div class="gallery__elem">
-                    <a href="images/portfolio/fullsize/6.jpg" class=".elem__ref-to-img" data-lightbox="roadtrip">
-                        <img src="images/portfolio/thumbnails/6.jpg" alt="" class="elem__image">
+                    <a href="images/portfolio/fullsize/instruments.jpg" data-lightbox="roadtrip">
+                        <img src="images/portfolio/thumbnails/instruments.jpg" alt="instruments" class="elem__image" />
                         <div class="elem__about">
                             <div class="about__category">Category6</div>
                             <div class="about__project">Project6</div>
-                        </div><!--End elem__about-->
-                    </a><!--End elem__ref-to-img-->    
-                </div><!--End gallery__elem-->
+                        </div>
+                    </a>   
+                </div>
 
             </div><!--End portfolio__gallery-->
         </div><!--End content__elem--portfolio-->
@@ -199,23 +209,23 @@
                 <div class="input-container">
                     
                             <div class="styled-input wide">
-                                <input type="text" required />
-                                <label>Name</label> 
+                                <input type="text" id="name" required />
+                                <label for="name" >Name</label> 
                             </div>
                         
                             <div class="styled-input">
-                                <input type="text" required />
-                                <label>Email</label> 
+                                <input type="text" id="email" required />
+                                <label for="email" >Email</label> 
                             </div>
                     
                             <div class="styled-input to-right" >
-                                <input type="text" required />
-                                <label>Phone</label> 
+                                <input type="text" id="phone" required />
+                                <label for="phone" >Phone</label> 
                             </div>
                         
                             <div class="styled-input wide">
-                                <textarea required></textarea>
-                                <label>Message</label>
+                                <textarea id="message" required></textarea>
+                                <label for="message" >Message</label>
                             </div>
                     
                         <div class="submit-btn to-right">Send Message</div>	
@@ -224,7 +234,7 @@
 
             <div class="form__telephone">
                 <div class="telephone__image">
-                    <image src="images/services/iphone.svg" alt="iphone minimalistic">
+                    <img src="images/services/iphone.svg" alt="iphone minimalistic">
                 </div>
                 <p class="contact__number">+380 (12) 345 6789</p>
             </div>
@@ -235,6 +245,6 @@
     <footer class="footer">
         <div class="footer__copyright">Copyright &copy; 2021 - Vladyslav Barsiienko</div> 
     </footer><!--End footer-->
-    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>

@@ -402,6 +402,9 @@ input:valid ~ label, textarea:valid ~ label, tel:valid ~ label, email:valid ~ la
 input[type="text"], textarea{
     font-size: 25px;
 }
+textarea{
+    resize: none;
+}
 .styled-input {
     float: left;
     width: 293px;
