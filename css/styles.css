@@ -305,7 +305,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 }
 
 .about__get-started {
-  line-height: 2.5;
+  line-height: 45px;
 }
 .about__get-started a:before, .about__get-started a:after {
   content: "GET STARTED!";
@@ -540,7 +540,7 @@ textarea {
     font-size: 30px;
     float: none;
     text-align: center;
-    line-height: 0.8;
+    line-height: 18px;
   }
 }
 input[type=checkbox] + label {

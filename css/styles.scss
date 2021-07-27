@@ -280,7 +280,7 @@ html:not([data-scroll="0"]) {
   }
 }
 .about__get-started {
-  line-height: 2.5;
+  line-height: 45px;
   a {
     &:before,
     &:after {
@@ -502,7 +502,7 @@ textarea {
     font-size: $primary-font-size;
     float: none;
     text-align: center;
-    line-height: 0.8;
+    line-height: 18px;
   }
 }
 
