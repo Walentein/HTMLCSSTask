@@ -95,7 +95,7 @@ html:not([data-scroll="0"]) {
     left: 0;
     z-index: 1030;
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     transition: height 0.1s linear;
   }
   .nav__title {
@@ -123,9 +123,9 @@ html:not([data-scroll="0"]) {
   background-attachment: scroll;
   background-size: cover;
 
-  height: 100vh;
-  min-height: 40rem;
-  padding-top: 4.5rem;
+  height: 947px;
+  min-height: 640px;
+  padding-top: 72px;
   padding-bottom: 0;
 }
 
@@ -201,17 +201,17 @@ html:not([data-scroll="0"]) {
 .about__separator,
 .services__separator,
 .contact__separator {
-  height: 0.2rem;
-  max-width: 3.25rem;
-  min-width: 3.25rem;
-  margin: 1.5rem auto;
+  height: 3px;
+  max-width: 52px;
+  min-width: 52px;
+  margin: 24px auto;
   background-color: $primary-color;
   opacity: 1;
   border: 0;
   display: block;
   unicode-bidi: isolate;
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   overflow: hidden;
@@ -389,7 +389,7 @@ html:not([data-scroll="0"]) {
 
 .container {
   display: flex;
-  margin: 0 1rem;
+  margin: 0 16px;
 }
 
 input:focus ~ label,
@@ -415,7 +415,7 @@ textarea {
 .styled-input {
   float: left;
   width: 293px;
-  margin: 1rem 0;
+  margin: 16px 0;
   position: relative;
   border-radius: 4px;
 }
@@ -432,7 +432,7 @@ textarea {
 
 .styled-input label {
   color: $black;
-  padding: 1rem 30px 1rem 30px;
+  padding: 16px 30px 16px 30px;
   position: absolute;
   left: 0;
   transition: all 0.5s ease;
@@ -448,7 +448,7 @@ textarea {
   padding: 15px;
   border: 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: 16px;
   background-color: $white;
   color: $black;
   border-radius: 4px;
@@ -468,7 +468,7 @@ textarea:focus ~ span {
 
 textarea {
   width: 100%;
-  min-height: 15em;
+  min-height: 240px;
 }
 
 .input-container {

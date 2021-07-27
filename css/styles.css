@@ -104,7 +104,7 @@ html:not([data-scroll="0"]) .header {
   left: 0;
   z-index: 1030;
   background: white;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
   transition: height 0.1s linear;
 }
 html:not([data-scroll="0"]) .nav__title:hover {
@@ -121,9 +121,9 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  height: 100vh;
-  min-height: 40rem;
-  padding-top: 4.5rem;
+  height: 947px;
+  min-height: 640px;
+  padding-top: 72px;
   padding-bottom: 0;
 }
 
@@ -215,10 +215,10 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 .about__separator,
 .services__separator,
 .contact__separator {
-  height: 0.2rem;
-  max-width: 3.25rem;
-  min-width: 3.25rem;
-  margin: 1.5rem auto;
+  height: 3px;
+  max-width: 52px;
+  min-width: 52px;
+  margin: 24px auto;
   background-color: #f4623a;
   opacity: 1;
   border: 0;
@@ -226,10 +226,10 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   unicode-bidi: -webkit-isolate;
   unicode-bidi: -moz-isolate;
   unicode-bidi: isolate;
-  -webkit-margin-before: 0.5em;
-          margin-block-start: 0.5em;
-  -webkit-margin-after: 0.5em;
-          margin-block-end: 0.5em;
+  -webkit-margin-before: 8px;
+          margin-block-start: 8px;
+  -webkit-margin-after: 8px;
+          margin-block-end: 8px;
   -webkit-margin-start: auto;
           margin-inline-start: auto;
   -webkit-margin-end: auto;
@@ -425,7 +425,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 
 .container {
   display: flex;
-  margin: 0 1rem;
+  margin: 0 16px;
 }
 
 input:focus ~ label,
@@ -454,7 +454,7 @@ textarea {
 .styled-input {
   float: left;
   width: 293px;
-  margin: 1rem 0;
+  margin: 16px 0;
   position: relative;
   border-radius: 4px;
 }
@@ -470,7 +470,7 @@ textarea {
 }
 .styled-input label {
   color: #000;
-  padding: 1rem 30px 1rem 30px;
+  padding: 16px 30px 16px 30px;
   position: absolute;
   left: 0;
   transition: all 0.5s ease;
@@ -486,7 +486,7 @@ textarea {
   padding: 15px;
   border: 0;
   width: 100%;
-  font-size: 1rem;
+  font-size: 16px;
   background-color: #fff;
   color: #000;
   border-radius: 4px;
@@ -506,7 +506,7 @@ textarea:focus ~ span {
 
 textarea {
   width: 100%;
-  min-height: 15em;
+  min-height: 240px;
 }
 
 .input-container {
