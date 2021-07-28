@@ -409,9 +409,6 @@ input[type="text"],
 textarea {
   font-size: 25px;
 }
-textarea {
-  resize: none;
-}
 .styled-input {
   float: left;
   width: 293px;
@@ -469,6 +466,7 @@ textarea:focus ~ span {
 textarea {
   width: 100%;
   min-height: 240px;
+  resize: none;
 }
 
 .input-container {
