@@ -136,7 +136,17 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 }
 
 .content__intro {
-  margin: 0px 122px;
+  margin: 0 122px;
+}
+@media (max-width: 768px) {
+  .content__intro {
+    margin: 0 61px;
+  }
+}
+@media (max-width: 576px) {
+  .content__intro {
+    margin: 0 30px;
+  }
 }
 
 .content__elem--about {
@@ -155,8 +165,18 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 0px 122px;
+  margin: 0 122px;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .element__about {
+    margin: 0 61px;
+  }
+}
+@media (max-width: 576px) {
+  .element__about {
+    margin: 0 30px;
+  }
 }
 
 .content__elem--services {
@@ -174,7 +194,17 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   justify-content: center;
   align-content: center;
   padding: 128px 0px;
-  margin: 0px 122px;
+  margin: 0 122px;
+}
+@media (max-width: 768px) {
+  .elem__services {
+    margin: 0 61px;
+  }
+}
+@media (max-width: 576px) {
+  .elem__services {
+    margin: 0 30px;
+  }
 }
 
 .elem__img img {
@@ -259,11 +289,12 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 .intro__more {
   position: relative;
   display: inline-flex;
-  width: 180px;
+  width: 200px;
   height: 55px;
   margin: 0 15px;
   perspective: 1000px;
   font-weight: bold;
+  line-height: 45px;
 }
 .about__get-started a,
 .intro__more a {
@@ -280,7 +311,7 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   position: absolute;
   content: "BUTTON";
   height: 55px;
-  width: 180px;
+  width: 200px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -304,9 +335,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   transform: translateZ(-25px) rotateX(-90deg);
 }
 
-.about__get-started {
-  line-height: 45px;
-}
 .about__get-started a:before, .about__get-started a:after {
   content: "GET STARTED!";
   border: 4px solid #fff;
@@ -328,6 +356,16 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
   display: flex;
   flex-direction: column;
   margin: 0 122px;
+}
+@media (max-width: 768px) {
+  .content__contact {
+    margin: 0 61px;
+  }
+}
+@media (max-width: 576px) {
+  .content__contact {
+    margin: 0 30px;
+  }
 }
 
 .form__telephone {
@@ -370,7 +408,6 @@ html:not([data-scroll="0"]) a.nav__menu--elem:hover {
 
 .gallery__elem {
   position: relative;
-  max-width: 650px;
   max-height: 345px;
 }
 @media (max-width: 992px) {
